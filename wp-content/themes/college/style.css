@@ -1,0 +1,2010 @@
+/*
+Theme Name: College
+Theme URI: http://underscores.me/
+Author: Lei
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0-wpcom
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: college
+Domain Path: /languages/
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+ College is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+and Blueprint http://www.blueprintcss.org/
+*/
+
+/* ============= Redesign - Academic Program ============== */
+.programImageStyle{
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 1px 1px #C0C0C0; 
+    width: 120px;
+    float: left;
+    margin: 0px 20px 10px 0px;  
+}
+/* ============= End Academic Program Redesign ============== */
+
+/* ========= Redesign - Side Navigation Style ======================= */
+.side-nav{margin:10px 0px;}
+.side-nav ul{padding:0px 0px; margin:0px 0px 0px 0px;
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 16px;
+}
+
+/* ------ First Level --------- 
+.side-nav ul li{list-style-type:none;list-style-image:none; margin-bottom:0px;}
+.side-nav ul li a{font-size: 18px; text-decoration:none; background-color: #D4E7F0;color:#022253; padding: 10px 10px 10px 20px; display:block;border-bottom: solid 1px #fff;
+}
+.side-nav ul li a:hover{background-color: #6394bf;}
+.side-nav ul li.active a{background-color: #6394bf;}
+*/
+.side-nav ul li{list-style-type:none;list-style-image:none; margin-bottom:0px;}
+.side-nav ul li a{font-size: 18px; text-decoration:none; background-color: #D4E7F0;color:#022253; padding: 10px 10px 10px 20px; display:block;border-bottom: solid 1px #fff;
+}
+.side-nav ul li a:hover{background-color: #6394bf;}
+.side-nav ul li.current_page_item > a{background-color: #6394bf;}
+/* ------ Second Level ----- 
+.side-nav ul li.active li{font-size:100%;}
+.side-nav ul li.active li a{font-weight:normal; color:#022253; background-color: #B4D5E5; xwidth: 165px; border-left: solid 10px #fff;height:auto; padding: 10px 10px 10px 20px; display:block; line-height:116%;}
+.side-nav ul li.active li a:hover{background-color: #6394bf;}
+.side-nav ul li.active li.active a{background-color: #6394bf;}
+*/
+.side-nav ul li li{font-size:100%;}
+.side-nav ul li li a{font-weight:normal; color:#022253; background-color: #B4D5E5; xwidth: 165px; border-left: solid 10px #fff;height:auto; padding: 10px 10px 10px 20px; display:block; line-height:116%;}
+.side-nav ul li li a:hover{background-color: #6394bf;}
+.side-nav ul li li.current_page_item > a{background-color: #6394bf;}
+
+/* ------- Third Level ----- 
+.side-nav ul li.active li.active li a{color:#000; font-weight:normal; padding: 10px 10px 10px 20px; border-left: 20px solid #fff; background-color:#E8F1F5;}
+.side-nav ul li.active li.active li.active a{background: #6394bf;}
+.side-nav ul li.active li.active li a:hover{background: #6394bf;}
+*/
+.side-nav ul li li li a{color:#000; font-weight:normal; padding: 10px 10px 10px 20px; border-left: 20px solid #fff; background-color:#E8F1F5;}
+.side-nav ul li li li.current_page_item > a{background: #6394bf;}
+.side-nav ul li li li a:hover{background: #6394bf;}
+
+/* ------- 4th Level ----- */
+.side-nav ul li.active li.active li.active li a{font-weight:normal; color:#999; padding:5px 10px 5px 60px; }
+.side-nav ul li.active li.active li.active li.active a{color:#666;}
+
+/* -------- Cross Browser ---- */
+
+/* ========= End Redesign - Side Navigation Styles ======================= */
+
+/* ========= Redesign - Admissions Side Nav ======================= */
+.admissions-side-nav{padding:0px 0px 0px 0px; margin:10px 0px 0px 0px;}
+
+.admissions-side-nav .heading{
+  background-color: #003366;
+}
+
+.admissions-side-nav .heading .headingText{
+  padding: 20px 10px 20px 20px;
+  color:#003366;  
+  display:block; 
+  xwidth: 175px;
+  border-bottom: solid 1px #fff;
+  font-size: 22px;
+  color: #ffffff;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  line-height: 1;
+}
+.admissions-side-nav ul{padding:0px 0px; margin:0px 0px 0px 0px;}
+
+/* ------ First Level --------- */
+.admissions-side-nav ul li{list-style-type:none;list-style-image:none; margin-bottom:0px;}
+.admissions-side-nav ul li a{text-decoration:none; background-color: #ffb519; color:#003366; padding: 10px 10px 10px 20px; display:block; xwidth:175px;border-bottom: solid 1px #fff; font-weight: bold;
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 16px;
+}
+.admissions-side-nav ul li a:hover{background-color: #FDE4AF;}
+.admissions-side-navul li.active a{font-weight:bold;}
+/* ========= End Redesign - Admissions Side Nav ===================*/
+
+/* =========== Redesign - Program Contact Info ==============*/
+.contact-box{background: #86BAD5;color: #003366; line-height:131%; margin: 10px 0px 0px 0px; padding: 20px 0px 10px 0px;}
+.contact-box a{color:#fff;}
+.contact-box a img{margin:10px 0px 0px 0px;}
+.contact-box h3{color: #003366; margin:0px 0px 5px 0px; line-height:1.3; padding:10px 16px 5px 16px; font-weight:bold; font-family: 'open sans'; font-size: 14px;}
+.contact-box h4{line-height: 1.3; color: #003366; margin:0px 0px 5px 0px; padding:10px 16px 5px 16px; font-weight:bold; font-family: 'open sans'; font-size: 14px;}
+
+.contact-box h2{margin-top: -20px; line-height: 1; border-bottom: 1px solid #fff; padding: 20px 16px; background: #003366; color: #fff; font-size: 22px; font-weight: bold;}
+.contact-box p{padding: 0px 16px;}
+
+/* =========== End Redesign - Program Contact Info ==============*/
+
+/* =========== Redesign - New Listing Side E =========== */
+.eventSideBox{
+  float: left;
+  width: 100%;
+}
+.eventSideBox .leftC {
+  border-left: 1px solid #c2c2c2;
+  border-right: 1px solid #c2c2c2;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #c2c2c2;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  color: #000;
+  float: left;
+  font-size: 12px;
+  font-weight: bold;
+  background-repeat: no-repeat;
+  line-height: 1.2em;
+  margin: 5px 10px 5px 0px;
+  text-align: center;
+  text-shadow: 0 1px 0 #ffffff;
+  width: 40px;;
+  xbackground-image: linear-gradient(#ffffff, #ffffff 1em, #e0e0e0);
+  border-color: #999999;
+  padding:4px;
+}
+.eventSideBox .month {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: #003366;
+  font-weight: bold;
+  line-height: 1.3em;
+}
+.eventSideBox .day {
+  font-size: 32px;
+  padding: 6px 6px 6px 0px;
+  font-weight: bold;
+  color: #ffb519;
+}
+.eventSideBox .weekday {
+  font-size: 10px;
+  line-height: 1.2em;
+  font-weight: bold;
+  color: #003366;
+}
+.eventSideBox .eventInfo {
+  clear: right;
+  margin: 7px 12px 7px 70px;
+  line-height: 1.3em;
+  padding: 0 !important;
+  position: relative;
+}
+.eventSideBox .eventInfo .time{
+  display: block !important;
+  font-weight: bold !important;
+  color: #D41733 !important;
+}
+/* =========== End Redesign - New Listing Side E =========== */
+/*========== Homepage Headline ===========*/
+.headlineHP{
+  color:#003366; 
+  font-size: 55px; 
+  text-align:center; 
+  margin: 50px 0px;
+  font-family: 'Open Sans Condensed', sans-serif; 
+  font-weight: bold;
+}
+/*========== End Homepage Headline ===========*/
+/*========== Online College Services ===========*/
+.onlineCollegeServices{
+margin: 0px 0px 20px 0px;
+}
+
+.onlineCollegeServices ul{
+list-style: none;
+display: inline-block;
+margin-left: 0px;
+}
+
+.onlineCollegeServices li{
+display: inline;
+margin: 0 6px 0px 0;
+}
+
+.onlineCollegeServices a {
+border: solid 1px #da7c0c;
+background: #003366;
+background: -webkit-gradient(linear, left top, left bottom, from(#0460BD), to(#003366));
+background: -moz-linear-gradient(top,  #0460bd,  #003366);
+box-shadow: 0px 0px 1px 1px #C0C0C0;
+text-shadow: 1px 1px 1px #333;
+border: 1px solid #fff;
+border-radius: 5px;
+height: 35px;
+width: 120px;
+padding: 0px 10px;
+display: inline-block;
+text-decoration: none;
+color: #fff;
+font-family: 'open sans condensed', sans-serif;
+font-size: 16px;
+text-align: center;
+line-height: 2.2;
+font-weight: bold;
+overflow: hidden;
+margin-bottom: 5px;
+}
+
+.onlineCollegeServices a:hover{
+background: #01284E;
+background: -webkit-gradient(linear, left top, left bottom, from(#054D96), to(#01284E));
+background: -moz-linear-gradient(top,  #054D96,  #01284E);
+}
+/*========== End Online College Services ===========*/
+/*========== Homepage Circle Content ===========*/
+.textCenter{
+       text-align:center;
+       border-style: none;
+       margin-bottom:50px;
+}
+.textCenter h2{
+       margin-top:20px;
+}
+.circular1 {
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  -webkit-border-radius: 125px;
+  -moz-border-radius: 125px;
+  background: url(http://www.cse.edu/global/images/home/hp-wc-321x321.JPG) center no-repeat;
+        margin: 0 auto;
+  }
+.textCenter p{
+        font-size: 16px;
+        margin: 20px;
+        line-height: 130%;
+}
+
+.circular2 {
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  -webkit-border-radius: 125px;
+  -moz-border-radius: 125px;
+  background: url(http://www.cse.edu/global/images/home/hp-cs-321x321.JPG) center no-repeat;
+        margin: 0 auto;
+  }
+.circular3 {
+  width: 250px;
+  height: 250px;
+  border-radius: 125px;
+  -webkit-border-radius: 125px;
+  -moz-border-radius: 125px;
+  background: url(http://www.cse.edu/global/images/home/hp-gs-321x321.JPG) center no-repeat;
+        margin: 0 auto;
+  }
+/*========== End Homepage Circle Content ===========*/
+/*========== Homepage Admissions Bar ===========*/
+.blueBackground{
+text-align: center;
+padding: 5px;
+background: #E7EFF3;
+margin-bottom: 50px;
+}
+
+.blueBackground ul{
+list-style: none;
+padding: 0 1em;
+display: inline-block;
+margin: 13px 0px;
+}
+
+.blueBackground li{
+display: inline;
+margin: 0 8px 0 0;
+}
+
+.blueBackground a {
+border: solid 1px #da7c0c;
+background: #f78d1d;
+background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+
+box-shadow: 0px 0px 1px 1px #C0C0C0;
+text-shadow: 1px 1px 1px #333;
+border: 1px solid #fff;
+border-radius: 5px;
+height: 40px;
+width: 150px;
+display: inline-block;
+text-decoration: none;
+color: #fff;
+font-family: 'open sans condensed', sans-serif;
+font-weight: bold;
+font-size: 22px;
+text-align: center;
+line-height: 1.7;
+overflow: hidden;
+}
+
+.blueBackground a:hover{
+background: #f47c20;
+background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+background: -moz-linear-gradient(top,  #f88e11,  #f06015);
+}
+.admissionsVAC {
+text-align: center;
+background: url(/test/lei/admissionVAC-background.png) center no-repeat;
+height: 50px;
+margin: 50px 0px 30px 0px;
+}
+.admissionsVAC ul {
+list-style: none;
+padding: 0 1em;
+display: inline-block;
+margin: 0px;
+}
+.admissionsVAC li {
+display: inline;
+margin: 0 8px 0 0;
+}
+.admissionsVAC a {
+height: 50px;
+width: 160px;
+display: inline-block;
+background: #eee;
+text-decoration: none;
+color: #fff;
+font-family: helvetica, sans-serif;
+font-weight: normal;
+font-size: 18px;
+text-align: center;
+line-height: 2.9;
+font-weight: bold;
+overflow: hidden;
+}
+/*========== End Homepage Admissions Bar ===========*/
+/*========== Homepage Footer Content ===========*/
+#footerContent{
+width: 210px;
+padding: 50px 20px 30px 0px;
+float: left;
+}
+
+#footerHeading{
+padding-bottom: 30px;
+}
+#footerNoHeading{
+padding-bottom: 30px;
+}
+.footerSocialMedia{
+margin: 0px 15px 0px 0px;
+float:left;
+}
+.footerSocialMedia a:hover{
+opacity: .8;
+filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+/*========== End Homepage Footer Content ===========*/
+/*============ Footer Links ===============*/
+.link{text-align:right;}
+.link a{color:#666; text-decoration:none;padding:0px 8px 0px 0px; background:url(/global/images/template/footer_pipe.gif) no-repeat top right;}
+.link a.last{padding:0px 0px 0px 4px; background:none;}
+.link a:hover{text-decoration:underline;}
+
+/*========== School Logo ===========*/
+#cseLogo{
+  margin: 10px 0;
+}
+/*========== School Logo ===========*/
+
+.footerWrapper{
+  background: #E7EFF3;
+  margin: 50px 0 0 0; 
+  padding: 50px 0;
+}
+
+.footerDivider{
+  border-top: 1px solid #ffe5b2;
+  padding: 10px 0px;
+}
+
+/*--Test HP Circle Animation--*/
+.round-div{
+  display: block;
+-webkit-transition: all 0.3s ease;
+-moz-transition: all 0.3s ease;
+-o-transition: all 0.3s ease;
+transition: all 0.3s ease;
+position: absolute;
+width: 200px;
+height: 200px;
+z-index: 99;
+-webkit-border-radius: 60px;
+-moz-border-radius: 500px;
+border-radius: 900px;
+border: 104px solid #fff;
+border-image: none;
+top: -64px;
+left: -64px;
+}
+.circle-wrapper {
+width: 280px;
+max-width: 100%;
+height: 280px;
+position: relative;
+left: -1px;
+top: 0px;
+display: block;
+overflow: hidden;
+text-align: center;
+margin: auto;
+}
+.content-wrapper:hover .round-div{
+  -webkit-transform: scale(1.4);
+  -moz-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  -o-transform: scale(1.4);
+  transform: scale(1.4);
+}
+.content-wrapper{
+  text-align:center;
+}
+/* CSE Accordion */
+#cseAccordion h3{
+  margin-top:20px;
+}
+#cseAccordion .ui-state-default,
+#cseAccordion .ui-widget-content .ui-state-default,
+#cseAccordion .ui-widget-header .ui-state-default {
+  border:none;
+  font-size: 20px;
+  border-bottom: 1px solid #d3d3d3;
+  background: none;
+  font-weight: normal;
+  color: #005bba;
+}
+#cseAccordion .ui-state-default a,
+#cseAccordion .ui-state-default a:link,
+#cseAccordion .ui-state-default a:visited {
+  color: #005bba;
+  font-size: 20px;
+  text-decoration: none;
+}
+#cseAccordion .ui-state-hover,
+#cseAccordion .ui-widget-content .ui-state-hover,
+#cseAccordion .ui-widget-header .ui-state-hover,
+#cseAccordion .ui-state-focus,
+#cseAccordion .ui-widget-content .ui-state-focus,
+#cseAccordion .ui-widget-header .ui-state-focus {
+  border:none;
+  border-bottom: 1px solid #999999;
+  background: none;
+  font-weight: normal;
+  color: #005bba;
+  transition-duration: 1.2s;
+}
+#cseAccordion .ui-state-hover a,
+#cseAccordion .ui-state-hover a:hover,
+#cseAccordion .ui-state-hover a:link,
+#cseAccordion .ui-state-hover a:visited,
+#cseAccordion .ui-state-focus a,
+#cseAccordion .ui-state-focus a:hover,
+#cseAccordion .ui-state-focus a:link,
+#cseAccordion .ui-state-focus a:visited {
+  color: #005bba;
+  text-decoration: none;
+}
+#cseAccordion .ui-state-active,
+#cseAccordion .ui-widget-content .ui-state-active,
+#cseAccordion .ui-widget-header .ui-state-active {
+  xborder-bottom: 1px solid #aaaaaa;
+  border: none;
+  background: none;
+  font-weight: normal;
+  color: #005bba;
+}
+#cseAccordion .ui-state-active a,
+#cseAccordion .ui-state-active a:link,
+#cseAccordion .ui-state-active a:visited {
+  color: #005bba;
+  text-decoration: none;
+}
+#cseAccordion .ui-widget-content {
+  border:none;
+  border-bottom: 1px solid #aaaaaa;
+  background: #ffffff url(images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+  color: #222222;
+}
+#cseAccordion .ui-widget-content a {
+color: #005bba;
+}
+/* Corner radius */
+#cseAccordion .ui-corner-all,
+#cseAccordion .ui-corner-top,
+#cseAccordion .ui-corner-left,
+#cseAccordion .ui-corner-tl {
+  border-top-left-radius: 0;
+}
+#cseAccordion .ui-corner-all,
+#cseAccordion .ui-corner-top,
+#cseAccordion .ui-corner-right,
+#cseAccordion .ui-corner-tr {
+  border-top-right-radius: 0;
+}
+#cseAccordion .ui-corner-all,
+#cseAccordion .ui-corner-bottom,
+#cseAccordion .ui-corner-left,
+#cseAccordion .ui-corner-bl {
+  border-bottom-left-radius: 0;
+}
+#cseAccordion .ui-corner-all,
+#cseAccordion .ui-corner-bottom,
+#cseAccordion .ui-corner-right,
+#cseAccordion .ui-corner-br {
+  border-bottom-right-radius: 0;
+}
+/* End Accordion */
+/*Toggle Content*/
+#toggleContent360 {
+  list-style:none;
+  font-size: 14px;
+  margin:8px;
+  padding:0;
+  width: 100%;
+
+}
+  #toggleContent360 li {
+    margin:10px;
+    border-bottom:1px solid #ccc;
+    position:relative;
+    cursor:pointer;
+    padding-bottom: 10px;
+    line-height: 150%;
+  }  
+  #toggleContent360 h4 {
+    margin:0;
+    font-size:18px;
+    color: #005bba;
+  }
+  #toggleContent360 span {
+    position:absolute;
+    right:5px; top:0;
+    color:#ccc;
+    font-size:16px;
+  }  
+  #toggleContent360 .panel {
+    margin:5px 0;
+    display:none;
+  }
+/*tables*/
+table.one{
+  border-collapse: collapse;
+  width:100%;
+  xborder:1px solid #999;
+  margin-bottom:20px;
+  }
+table.one td, th {
+  xborder: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+}
+table.one tr.border_bottom td {
+  border-bottom:1pt dashed #C0C0C0;
+}
+/* Catalog Course Accordion */
+#courseAccordion .ui-state-default,
+#courseAccordion .ui-widget-content .ui-state-default,
+#courseAccordion .ui-widget-header .ui-state-default {
+  font-weight: normal;
+}
+#courseAccordion .ui-state-default a,
+#courseAccordion .ui-state-default a:link,
+#courseAccordion .ui-state-default a:visited {
+  color: #555555;
+  text-decoration: none;
+}
+#courseAccordion .ui-state-hover,
+#courseAccordion .ui-widget-content .ui-state-hover,
+#courseAccordion .ui-widget-header .ui-state-hover,
+#courseAccordion .ui-state-focus,
+#courseAccordion .ui-widget-content .ui-state-focus,
+#courseAccordion .ui-widget-header .ui-state-focus {
+  background: #dadada;
+  font-weight: normal;
+  color: #212121;
+}
+/*Keybord Access*/
+a:focus {
+color: #3399cc;
+}
+.admissionsSideNav ul li a:focus{background-color: #FDE4AF;}
+.sideNav ul li a:focus{background-color: #6394bf;}
+/*End Keybord Access*/
+
+/*Admissions Blue Buttons - font size 20px*/
+a.admissions-btn1{
+  background-color: #005bba;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 30px;
+  font-size: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.admissions-btn1:hover, .admissions-btn1:focus, .admissions-btn1:active{
+color: #fff;
+background-color: #054D96;
+text-decoration: none;
+}
+/*Admissions Blue Buttons - font size 14px*/
+a.admissions-btn2{
+  background-color: #005bba;
+  width:90%;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid transparent;
+  margin-bottom: 20px;
+}
+
+.admissions-btn2:hover, .admissions-btn2:focus, .admissions-btn2:active{
+color: #fff;
+background-color: #054D96;
+text-decoration: none;
+}
+/*Hide search submit button*/
+input[type="submit"].search-button{
+  display:none;
+}
+/*Hide calendar left nav, calendar categories, tags, browse button*/
+.calendarFiltersBox,
+a.calendar-btn.hide-calendar-btn,
+#moreOptionsButton{
+  display:none;
+}
+/*Hide ongoing events if there is no events listed*/
+.hide-listOngoing{
+  display:none;
+}
+/*Mega menu*/
+.cbp-hrmenu {
+  width: 100%;
+  background-color: #ffb519;  
+  -moz-border-radius: 5px 5px 0px 0px;
+  -webkit-border-radius: 5px 5px 0px 0px;
+  border-radius: 5px 5px 0px 0px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* general ul style */
+.cbp-hrmenu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+/* first level ul style */
+.cbp-hrmenu > ul,
+.cbp-hrmenu .cbp-hrsub-inner {
+  margin: 0 auto;
+  padding: 0 1.875em;
+}
+
+.cbp-hrmenu > ul > li {
+  display: inline-block;
+}
+
+.cbp-hrmenu > ul > li > a {
+  padding: 0.8em 0.5em;
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.5em;
+}
+
+.cbp-hrmenu > ul > li > a:hover,
+.cbp-hrmenu > ul > li > a:focus{
+  color: #003366;
+}
+
+.cbp-hrmenu > ul > li.cbp-hropen a,
+.cbp-hrmenu > ul > li.cbp-hropen > a:hover {
+  color: #003366;
+}
+
+.cbp-hrsub a:hover,
+.cbp-hrsub a:focus{
+  color: #003366;
+  background: #ffb519;
+}
+
+.cbp-hrmenu > ul > li.cbp-hropen:after{
+  content:'';
+display:block;
+position:relative;
+top:0px; /*should be set to -border-width x 2 */
+left: 40%;
+width:0;
+height:0;
+border-color: transparent transparent #fff transparent;
+border-style: solid;
+border-width: 10px;
+margin: -20px 0 0 0;
+}
+
+/* sub-menu */
+.cbp-hrmenu .cbp-hrsub {
+  display: none;
+  position: absolute;
+  background: #fff;
+  width: 940px;
+  left: 10px;
+}
+
+.cbp-hropen .cbp-hrsub {
+  display: block;
+  padding-bottom: 3em;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner > div {
+  width: 22%;
+  float: left;
+  padding: 0 0.8em 0;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner:before,
+.cbp-hrmenu .cbp-hrsub-inner:after {
+  content: " ";
+  display: table;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner:after {
+  clear: both;
+}
+
+.cbp-hrmenu .cbp-hrsub-inner > div a {
+  line-height: 1.3em;
+  font-size: 1.1em;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.cbp-hrsub h4{
+  color: #ffb519;
+  padding: 2em 0 0.6em;
+  margin: 0;
+  font-size: 120%;
+  font-weight: 300;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.showhide{
+  display: none;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  color: #999;
+  background: #003366;
+}
+
+.showhideSub{
+  display: none;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  color: #999;
+  background: #6394bf;
+}
+
+#giveToCSE1{
+  display:none;
+}
+#giveToCSE2{
+  background-color: #ffb519;
+  color: #003366;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 5px;
+  margin: 27px 0;
+  float: right;
+  -moz-border-radius: 4px 4px 4px 4px;
+  -webkit-border-radius: 4px 4px 4px 4px;
+  border-radius: 4px 4px 4px 4px;
+}
+#giveToCSE2 a:hover{
+opacity: .8;
+filter: alpha(opacity=80); /* For IE8 and earlier */
+}
+.headerWrap2 h3{
+  padding-left: 20px;
+  color:#fff;
+}
+/*Search Bar - Mobile*/
+.site-search {
+  display:none;
+  width:100%;
+}
+
+.site-search input[type="text"] {
+    background-size: 25px 25px;
+    border: 1px solid #d1d1d1;
+    color: #bebebe;
+    width: 88%;
+    padding: 6px 15px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    }
+/*Top Search Bar - Desktop*/
+.searchTop {
+  display:block;
+  width:100%;
+}
+
+.searchTop input[type="search"] {
+    background-size: 25px 25px;
+    border: 1px solid #d1d1d1;
+    color: #bebebe;
+    width: 40%;
+    float:right;
+    margin-top:30px;
+    padding: 6px 15px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    }
+/*Top Circle Buttons - Apply, Events, Give*/
+.circle {
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  -moz-border-radius: 45px;
+  -webkit-border-radius: 45px;
+  background-color: #003366;
+  color: #fff;
+  text-align:center;
+  margin-top: 20px;
+  margin-left: 15px;
+  float:right;
+  border: 2px solid #fff;
+}
+
+.circle a {
+  text-decoration:none;
+  color:#fff;
+}
+
+.circle a:focus {
+  color:#ffb519;
+}
+
+.circle:hover {
+  background-color: #ffb519;
+  color:#003366;
+}
+.circle .text{
+  padding: 13px 0px;
+  font-family:"open sans condensed";
+  font-size: 16px;
+  font-weight:bold;
+}
+/* Go to the top button */
+#goTop{
+    display: none;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background:#3c3c3c;
+    opacity: 0.7;
+    padding:10px;
+    position:fixed;
+    bottom:10px;
+    right:10px;
+}
+/* Calendar */
+#full-calendar{display:block;}
+#mobile-calendar{display:none;}
+.viewBox{display:block;}
+/* Media Queries */
+@media only screen and (min-width: 960px) { 
+#cbp-hrmenu {
+  display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) { 
+  .round-div{
+      top: -68px;
+      left: -68px;
+  }
+
+  .content-wrapper:hover .round-div{
+      -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      -o-transform: none;
+      transform: none;
+  }
+/*Mega menus for mobile devices*/
+  #cbp-hrmenu {
+  display: none;
+  }
+  .cbp-hrmenu {
+    font-size: 100%;
+    border: none;
+  }
+  .cbp-hrmenu > ul,
+  .cbp-hrmenu .cbp-hrsub-inner {
+    width: 100%;
+    padding: 0;
+  }
+  .cbp-hrmenu .cbp-hrsub-inner > div {
+    width: 30%;
+    padding: 0 0 0 10%;
+  }
+  .cbp-hrmenu .cbp-hrsub-inner {
+    font-size: 100%;
+  }
+  .cbp-hrmenu > ul > li {
+    display: block;
+    border-bottom: 4px solid #003366;
+  }
+  .cbp-hrmenu > ul > li > a { 
+    display: block;
+    padding: 2% 10%;
+  }
+
+  .cbp-hrmenu .cbp-hrsub { 
+    position: relative;
+    width:748px;
+    left:0px;
+  }
+
+  .cbp-hrsub h4 {
+    padding-top: 0.6em;
+  }
+
+  .showhide{
+  display: block;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  color: #999;
+  background: #003366;
+  }
+  .showhide span.title{
+    margin: 15px 0 0 25px;
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+  }
+  .showhide span.icon{
+    padding: 10px 20px;
+    float: left;
+  }
+  .showhide .icon em{
+    margin-bottom: 3px;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+  }
+
+  .showhide span.searchIcon{
+    display:none;
+    margin: 5px 10px;
+    font-family: 'Open Sans', sans-serif;
+    float: right;
+  }
+  .showhide span.searchIcon img{
+    width: 25px;
+    color: #fff;
+  }
+  #cseLogo img{
+    float: left;
+  }
+  #giveToCSE1{
+    display:none;
+  }
+  #giveToCSE2{
+    background-color: #ffb519;
+    color: #003366;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 27px 0 10px 0;
+    float: right;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+  }
+  #giveToCSE2 a:hover{
+    opacity: .8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+  }
+  .site-search {
+  display:none;
+  width:100%;
+  }
+  .searchTop {
+  display:block;
+  width:100%;
+  }
+  .searchTop input[type="search"] {
+    background-size: 25px 25px;
+    border: 1px solid #d1d1d1;
+    color: #bebebe;
+    width: 32%;
+    float:right;
+    margin-top:30px;
+    padding: 6px 15px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+    }
+/*--calendar show hide--*/
+
+  #weeklyViewBtn{
+    display: none;
+  }
+  #monthlyViewBtn{
+    display: none;
+  }
+
+  #calendarNavigation{
+    display: none;
+  }
+  #calendarSearch{
+    display:none;
+  }
+  #listOngoing{
+    display: none;
+  }
+  #captionRSS{
+    display: none;
+  }
+  #captionDayNav{
+    display: none;
+  }
+  #moreOptionsButton{
+    display: none;
+  }
+  .viewBox{display:none;}
+  .searchBox{float:left;}
+
+#full-calendar{display:none;}
+#mobile-calendar{display:block;}
+  /*--end calendar show hide--*/
+}
+/*@media screen and (max-width: 43em) */
+@media only screen and (min-width: 480px) and (max-width: 767px) { 
+  
+  .round-div{
+      top: -68px;
+      left: -68px;
+  }
+/*Hide images disply on mobile devices*/
+ #mobileImage img{
+      display:none;
+  }
+  .content-wrapper:hover .round-div{
+      -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      -o-transform: none;
+      transform: none;
+  }  
+  #cbp-hrmenu{
+    display: none;
+  }
+  .side-nav{
+    display:none;
+  }
+  .admissions-side-nav{
+    display:none;
+  }
+  .contact-box{
+    display:none;
+  }
+  
+  .cbp-hrmenu {
+    font-size: 100%;
+    border: none;
+  }
+
+  .cbp-hrmenu > ul,
+  .cbp-hrmenu .cbp-hrsub-inner {
+    width: 100%;
+    padding: 0;
+  }
+  .cbp-hrmenu .cbp-hrsub-inner > div {
+    width: 90%;
+    padding: 0 0 0 10%;
+  }
+  .cbp-hrmenu .cbp-hrsub-inner {
+    font-size: 100%;
+  }
+
+  .cbp-hrmenu > ul > li {
+    display: block;
+    border-bottom: 4px solid #003366;
+  }
+
+  .cbp-hrmenu > ul > li > a { 
+    display: block;
+    padding: 4% 10%;
+  }
+
+  .cbp-hrmenu .cbp-hrsub { 
+    position: relative;
+    width:420px;
+    left:0px;
+  }
+
+  .cbp-hrsub h4 {
+    padding-top: 0.6em;
+  }
+
+
+  .showhide{
+  display: block;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  color: #999;
+  background: #003366;
+  }
+  .showhide span.title{
+    margin: 15px 0 0 25px;
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+  }
+  .showhide span.searchIcon{
+    margin: 5px 10px;
+    font-family: 'Open Sans', sans-serif;
+    float: right;
+  }
+  .showhide span.searchIcon img{
+    width: 25px;
+    color: #fff;
+  }
+  .showhide span.icon{
+    padding: 10px 10px;
+    float: left;
+  }
+  .showhide .icon em{
+    margin-bottom: 3px;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+  }
+
+  .showhideSub{
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  color: #fff;
+  background: #6394bf;
+  }
+  .showhideSub span.title{
+    font-size: 20px;
+    margin: 10px 20px 0px 0px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    float: right;
+  }
+  .showhideSub span.icon{
+    margin: 10px 20px;
+    float: left;
+  }
+  .showhideSub .icon em{
+    margin-bottom: 3px;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+  }
+  #cseLogo img{
+    display:block;
+    margin:auto;
+  }
+  #giveToCSE1{
+    display:block;
+    background-color: #ffb519;
+    color: #003366;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 10px 0;
+    float: right;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+  }
+  #giveToCSE1 a:hover{
+    opacity: .8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+  }
+  #giveToCSE2{
+    display:none;
+  }
+  .blueBackground li a{
+    width:100%;
+  }
+  .link {
+    text-align:left;  
+  }
+  .searchTop {
+  display:none;
+  width:100%;
+  }
+  .circle {
+    width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  -moz-border-radius: 45px;
+  -webkit-border-radius: 45px;
+  background-color: #003366;
+  color: #fff;
+  text-align:center;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  float:right;
+  border: 2px solid #fff;
+  }
+
+  .circle a {
+  text-decoration:none;
+  color:#fff;
+  }
+
+  .circle:hover {
+  background-color: #ffb519;
+  color:#003366;
+  }
+  .circle .text{
+  padding: 13px 0px;
+  font-family:"open sans condensed";
+  font-size: 16px;
+  font-weight:bold;
+  }
+  .circleCenter{
+    width:50%;
+    margin:0 auto;
+  }
+/*--calendar show hide--*/
+
+  #weeklyViewBtn{
+    display: none;
+  }
+  #monthlyViewBtn{
+    display: none;
+  }
+
+  #calendarNavigation{
+    display: none;
+  }
+  #calendarSearch{
+    display:none;
+  }
+  #listOngoing{
+    display: none;
+  }
+  #captionRSS{
+    display: none;
+  }
+  #captionDayNav{
+    display: none;
+  }
+  #moreOptionsButton{
+    display: none;
+  }
+  .viewBox{float:left;}
+  .searchBox{float:left;}
+#full-calendar{display:none;}
+#mobile-calendar{display:block;}
+
+  /*--end calendar show hide--*/
+}
+@media only screen and (max-width: 479px) {
+
+  .round-div{
+      top: -68px;
+      left: -68px;
+  }
+/*Hide images disply on mobile devices*/
+  #mobileImage img{
+      display:none;
+  }
+  .content-wrapper:hover .round-div{
+      -webkit-transform: none;
+      -moz-transform: none;
+      -ms-transform: none;
+      -o-transform: none;
+      transform: none;
+  }
+  .headlineHP{
+    font-size:40px;
+    margin: 50px 0px 30px 0px;
+  }
+  #cbp-hrmenu {
+    display: none;
+  }
+  .side-nav{
+    display:none;
+  }
+  .admissions-side-nav{
+    display:none;
+  }
+  .contact-box{
+    display:none;
+  }
+  .cbp-hrmenu {
+    font-size: 100%;
+    border: none;
+  }
+  .cbp-hrmenu .cbp-hrsub-inner > div {
+    width: 90%;
+    padding: 0 0 0 10%;
+  }
+  .cbp-hrmenu > ul,
+  .cbp-hrmenu .cbp-hrsub-inner {
+    width: 100%;
+    padding: 0;
+  }
+
+  .cbp-hrmenu .cbp-hrsub-inner {
+    font-size: 100%;
+  }
+
+  .cbp-hrmenu > ul > li {
+    display: block;
+    border-bottom: 4px solid #003366;
+  }
+
+  .cbp-hrmenu > ul > li > a { 
+    display: block;
+    padding: 5% 10%;
+  }
+
+  .cbp-hrmenu .cbp-hrsub { 
+    position: relative;
+    width:300px;
+    left:0;
+  }
+
+  .cbp-hrsub h4 {
+    padding-top: 0.6em;
+  }
+
+
+  .showhide{
+  display: block;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  color: #999;
+  background: #003366;
+  }
+  .showhide span.title{
+    margin: 15px 0 0 25px;
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+  }
+  .showhide span.icon{
+    padding: 10px 15px;
+    float: left;
+  }
+  .showhide .icon em{
+    margin-bottom: 3px;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+  }
+  .showhide span.searchIcon{
+    margin: 5px 10px;
+    font-family: 'Open Sans', sans-serif;
+    float: right;
+  }
+  .showhide span.searchIcon img{
+    width: 25px;
+    color: #fff;
+  }
+  .showhideSub{
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  cursor: pointer;
+  color: #fff;
+  background: #6394bf;
+  }
+  .showhideSub span.title{
+    font-size: 20px;
+    margin: 10px 20px 0px 0px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    float: right;
+  }
+  .showhideSub span.icon{
+    margin: 10px 20px;
+    float: left;
+  }
+  .showhideSub .icon em{
+    margin-bottom: 3px;
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+  }
+  #cseLogo img{
+    display:block;
+    margin:auto;
+  }
+  #giveToCSE2{
+    display:none;
+  }  
+  #giveToCSE1{
+    display:block;
+    background-color: #ffb519;
+    color: #003366;
+    font-family: "Open Sans Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    margin: 10px 0;
+    float: right;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+    border-radius: 4px 4px 4px 4px;
+  }
+
+  .blueBackground li a{
+    width:100%;
+  }
+  .link {
+    text-align:left;  
+  }
+  .searchTop {
+  display:none;
+  width:100%;
+  }
+    .circle {
+    width: 45px;
+    height: 45px;
+    -moz-border-radius: 45px;
+    -webkit-border-radius: 45px;
+    background-color: #003366;
+    color: #fff;
+    text-align:center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right:1px;
+    border: 2px solid #fff;
+  }
+
+  .circle a {
+  text-decoration:none;
+  color:#fff;
+  }
+
+  .circle .text{
+  padding: 13px 0px;
+  font-family:"open sans condensed";
+  font-size: 16px;
+  font-weight:bold;
+  }
+  .circleCenter{
+    width:50%;
+    margin:0 auto;
+  }
+  .site-search input[type="text"] {
+    width: 83%;
+    margin: 1% 0;
+  }
+
+/*--calendar show hide--*/
+
+  #weeklyViewBtn{
+    display: none;
+  }
+  #monthlyViewBtn{
+    display: none;
+  }
+
+  #calendarNavigation{
+    display: none;
+  }
+  #calendarSearch{
+    display:none;
+  }
+  #listOngoing{
+    display: none;
+  }
+  #captionRSS{
+    display: none;
+  }
+  #captionDayNav{
+    display: none;
+  }
+  #moreOptionsButton{
+    display: none;
+  }
+  .viewBox{float:left;}
+  .searchBox{float:left;}
+#full-calendar{display:none;}
+#mobile-calendar{display:block;}
+  /*--end calendar show hide--*/
+
+  /* Responsive Forms*/
+  form dt{
+    width: 100%;
+  }
+  form dt img{
+    float:left:
+  }
+  form dd{
+    width: 100%;
+  }
+  .btnWrap{
+    margin-left: 0;
+  }
+  /*Hide image banner arrows*/
+  .flex-direction-nav .flex-prev, 
+  .flex-direction-nav .flex-next{
+    display:none;
+  }
+
+}
+
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+
+/* Table of Contents
+==================================================
+    #Base 960 Grid
+    #Tablet (Portrait)
+    #Mobile (Portrait)
+    #Mobile (Landscape)
+    #Clearing */
+
+
+
+/* #Base 960 Grid
+================================================== */
+
+    .container                                  { position: relative; width: 960px; margin: 0 auto; padding: 0; }
+    .container .column,
+    .container .columns                         { float: left; display: inline; margin-left: 10px; margin-right: 10px; }
+    .row                                        { margin-bottom: 20px; }
+
+    /* Nested Column Classes */
+    .column.alpha, .columns.alpha               { margin-left: 0; }
+    .column.omega, .columns.omega               { margin-right: 0; }
+
+    /* Base Grid */
+    .container .one.column,
+    .container .one.columns                     { width: 40px;  }
+    .container .two.columns                     { width: 100px; }
+    .container .three.columns                   { width: 160px; }
+    .container .four.columns                    { width: 220px; }
+    .container .five.columns                    { width: 280px; }
+    .container .six.columns                     { width: 340px; }
+    .container .seven.columns                   { width: 400px; }
+    .container .eight.columns                   { width: 460px; }
+    .container .nine.columns                    { width: 520px; }
+    .container .ten.columns                     { width: 580px; }
+    .container .eleven.columns                  { width: 640px; }
+    .container .twelve.columns                  { width: 700px; }
+    .container .thirteen.columns                { width: 760px; }
+    .container .fourteen.columns                { width: 820px; }
+    .container .fifteen.columns                 { width: 880px; }
+    .container .sixteen.columns                 { width: 940px; }
+
+    .container .one-third.column                { width: 300px; }
+    .container .two-thirds.column               { width: 620px; }
+
+    /* Offsets */
+    .container .offset-by-one                   { padding-left: 60px;  }
+    .container .offset-by-two                   { padding-left: 120px; }
+    .container .offset-by-three                 { padding-left: 180px; }
+    .container .offset-by-four                  { padding-left: 240px; }
+    .container .offset-by-five                  { padding-left: 300px; }
+    .container .offset-by-six                   { padding-left: 360px; }
+    .container .offset-by-seven                 { padding-left: 420px; }
+    .container .offset-by-eight                 { padding-left: 480px; }
+    .container .offset-by-nine                  { padding-left: 540px; }
+    .container .offset-by-ten                   { padding-left: 600px; }
+    .container .offset-by-eleven                { padding-left: 660px; }
+    .container .offset-by-twelve                { padding-left: 720px; }
+    .container .offset-by-thirteen              { padding-left: 780px; }
+    .container .offset-by-fourteen              { padding-left: 840px; }
+    .container .offset-by-fifteen               { padding-left: 900px; }
+
+
+
+/* #Tablet (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 768px */
+
+    @media only screen and (min-width: 768px) and (max-width: 959px) {
+        .container                                  { width: 768px; }
+        .container .column,
+        .container .columns                         { margin-left: 10px; margin-right: 10px;  }
+        .column.alpha, .columns.alpha               { margin-left: 0; margin-right: 10px; }
+        .column.omega, .columns.omega               { margin-right: 0; margin-left: 10px; }
+        .alpha.omega                                { margin-left: 0; margin-right: 0; }
+
+        .container .one.column,
+        .container .one.columns                     { width: 28px; }
+        .container .two.columns                     { width: 76px; }
+        .container .three.columns                   { width: 124px; }
+        .container .four.columns                    { width: 172px; }
+        .container .five.columns                    { width: 220px; }
+        .container .six.columns                     { width: 268px; }
+        .container .seven.columns                   { width: 316px; }
+        .container .eight.columns                   { width: 364px; }
+        .container .nine.columns                    { width: 412px; }
+        .container .ten.columns                     { width: 460px; }
+        .container .eleven.columns                  { width: 508px; }
+        .container .twelve.columns                  { width: 556px; }
+        .container .thirteen.columns                { width: 604px; }
+        .container .fourteen.columns                { width: 652px; }
+        .container .fifteen.columns                 { width: 700px; }
+        .container .sixteen.columns                 { width: 748px; }
+
+        .container .one-third.column                { width: 236px; }
+        .container .two-thirds.column               { width: 492px; }
+
+        /* Offsets */
+        .container .offset-by-one                   { padding-left: 48px; }
+        .container .offset-by-two                   { padding-left: 96px; }
+        .container .offset-by-three                 { padding-left: 144px; }
+        .container .offset-by-four                  { padding-left: 192px; }
+        .container .offset-by-five                  { padding-left: 240px; }
+        .container .offset-by-six                   { padding-left: 288px; }
+        .container .offset-by-seven                 { padding-left: 336px; }
+        .container .offset-by-eight                 { padding-left: 384px; }
+        .container .offset-by-nine                  { padding-left: 432px; }
+        .container .offset-by-ten                   { padding-left: 480px; }
+        .container .offset-by-eleven                { padding-left: 528px; }
+        .container .offset-by-twelve                { padding-left: 576px; }
+        .container .offset-by-thirteen              { padding-left: 624px; }
+        .container .offset-by-fourteen              { padding-left: 672px; }
+        .container .offset-by-fifteen               { padding-left: 720px; }
+    }
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 767px) {
+        .container { width: 300px; }
+        .container .columns,
+        .container .column { margin: 0; }
+
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column  { width: 300px; }
+
+        /* Offsets */
+        .container .offset-by-one,
+        .container .offset-by-two,
+        .container .offset-by-three,
+        .container .offset-by-four,
+        .container .offset-by-five,
+        .container .offset-by-six,
+        .container .offset-by-seven,
+        .container .offset-by-eight,
+        .container .offset-by-nine,
+        .container .offset-by-ten,
+        .container .offset-by-eleven,
+        .container .offset-by-twelve,
+        .container .offset-by-thirteen,
+        .container .offset-by-fourteen,
+        .container .offset-by-fifteen { padding-left: 0; }
+
+    }
+
+
+/* #Mobile (Landscape)
+================================================== */
+
+    /* Note: Design for a width of 480px */
+
+    @media only screen and (min-width: 480px) and (max-width: 767px) {
+        .container { width: 420px; }
+        .container .columns,
+        .container .column { margin: 0; }
+
+        .container .one.column,
+        .container .one.columns,
+        .container .two.columns,
+        .container .three.columns,
+        .container .four.columns,
+        .container .five.columns,
+        .container .six.columns,
+        .container .seven.columns,
+        .container .eight.columns,
+        .container .nine.columns,
+        .container .ten.columns,
+        .container .eleven.columns,
+        .container .twelve.columns,
+        .container .thirteen.columns,
+        .container .fourteen.columns,
+        .container .fifteen.columns,
+        .container .sixteen.columns,
+        .container .one-third.column,
+        .container .two-thirds.column { width: 420px; }
+    }
+
+
+/* #Clearing
+================================================== */
+
+    /* Self Clearing Goodness */
+    .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+    /* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+    .clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after {
+      clear: both; }
+    .row,
+    .clearfix {
+      zoom: 1; }
+
+    /* You can also use a <br class="clear" /> to clear columns */
+    .clear {
+      clear: both;
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0;
+    }
+.noMargin{margin-left:0px; margin-right:0px;}
+
+/* Catalog Testing */
+
+/* catalog programs */
+#buttons button{
+  background-color: #5a5858;
+  color: #fff;
+  cursor: pointer;
+  border:none;
+  font-size: 12px;
+  font-weight: normal;
+  text-shadow: none;
+  margin:5px;  
+}
+#buttons, #search {
+  text-align: center;
+  margin-bottom: 30px;}
+
+button{
+  margin: 10px;
+
+  }
+
+#catalog-programs {
+  text-align: center;
+  margin: 0px auto;}
+
+.catalog-program {
+        width: 215px;
+  height: 150px;
+        vertical-align: top;
+        display:inline-block;
+  color: #fff;
+  text-align: left;
+        margin-right: 10px;
+        margin-bottom: 10px;
+  }
+/*.catalog-program:hover {
+  opacity: .8;
+        filter: alpha(opacity=80);
+}*/
+.catalog-program h3,
+.catalog-program h4{
+        padding: 10px;
+  color: #fff;
+        margin-bottom: 0;
+  }
+.catalog-program.undergraduate-ba{
+  background-color: #1262b3;
+}
+.catalog-program.undergraduate-bs{
+  background-color: #73120b;
+}
+.catalog-program.undergraduate-m{
+  background-color: #303030;
+}
+.catalog-program.graduate-ma{
+  background-color: #003366;
+}
+.catalog-program.graduate-ms{
+  background-color: #a1b309;
+}
+.catalog-program.nondegree{
+  background-color: #ffbb3d;
+}
+
+.catalog-programs .catalog-program.program-expanded > a::after{
+top:auto;
+border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-bottom-color: #ddd;
+    border-width: 15px;
+    left: 50%;
+    margin: -20px 0 0 -15px;
+}
+.program-expander {
+    position: absolute;
+    background: #ddd;
+    top: auto;
+    left: 0;
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+    height: 0;
+    overflow: hidden;
+}
+.program-expander-inner {
+    padding: 50px 30px;
+    height: 100%;
+}
+.og-close {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.og-close::before,
+.og-close::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  height: 1px;
+  background: #888;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.og-close::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.og-close:hover::before,
+.og-close:hover::after {
+  background: #333;
+}
+.program-description,
+.program-offerings {
+    width: 45%;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.program-description{
+padding: 0 40px 0 20px;
+}
+.program-description h3,
+.program-description p{
+  color: #000;
+}
+.program-offerings{
+max-height:100%;
+max-width:100%;
+}
+
+.og-loading {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ddd;
+    box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    animation: loader 0.5s infinite ease-in-out both;
+}
+ 
+@keyframes loader {
+    0% { background: #ddd; }
+    33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+    66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@media screen and (max-width: 760px) {
+ 
+    .catalog-program { width:50%; }
+ 
+}
+ 
+@media screen and (max-width: 480px) {
+ 
+    .catalog-program { width:100%; }
+     
+}
