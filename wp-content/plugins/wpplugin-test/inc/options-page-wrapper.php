@@ -78,7 +78,7 @@
 								echo '<p><a href = ' . $repository->{'repository'}->{'html_url'} . '>'. $repository->{'repository'}->{'name'} . '</a></p>';
 							}
 							*/
-							if($wpplugin_profile["errors"][0]["message"] != "") {echo "<h3>Sorry, there was a problem.</h3><p>Twitter returned the following error message:</p><p><em>".$wpplugin_profile[errors][0]["message"]."</em></p>";exit();}
+							if(!empty($wpplugin_profile["errors"][0]["message"])) {echo "<h3>Sorry, there was a problem.</h3><p>Twitter returned the following error message:</p><p><em>".$wpplugin_profile['errors'][0]["message"]."</em></p>";exit();}
 								foreach($wpplugin_profile as $items)
 								    {
 								        echo "Time and Date of Tweet: ".$items['created_at']."<br />";

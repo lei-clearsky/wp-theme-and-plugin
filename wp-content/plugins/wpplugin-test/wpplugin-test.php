@@ -72,6 +72,7 @@ function wpplugin_test_options_pages(){
 				$options['consumer_secret'] = $consumer_secret;
 				$options['wpplugin_profile']  = $wpplugin_profile;
 				$options['last_updated']	  = time();
+
 				update_option('wpplugin_tweets', $options);
 				
 			}
@@ -82,11 +83,104 @@ function wpplugin_test_options_pages(){
 	if ($options !=''){
 		$wpplugin_username = $options['wpplugin_username'];
 		$wpplugin_profile = $options['wpplugin_profile'];
+
+		$wpplugin_tweets_count = $options['wpplugin_tweets_count'];
+		$oauth_access_token = $options['oauth_access_token'];
+		$oauth_access_token_secret = $options['oauth_access_token_secret'];
+		$consumer_key = $options['consumer_key'];
+		$consumer_secret = $options['consumer_secret'];
 	}
 
 	require('inc/options-page-wrapper.php');
 }
 
+class Wpplugin_Twitter_Widget extends WP_Widget {
+
+	function wpplugin_twitter_widget() {
+		// Instantiate the parent object
+		parent::__construct( false, 'Twitter User Timeline Widget' );
+	}
+
+	function widget( $args, $instance ) {
+		// Widget output
+
+		extract( $args );
+		$title = apply_filters('widget_title', $instance['title']);
+		//$num_tweets = $instance['num_tweets'];
+
+		$wpplugin_username = esc_html($instance['wpplugin_username']);
+		$wpplugin_tweets_count = esc_html($instance['num_tweets']);
+		$oauth_access_token = esc_html($instance['oauth_access_token']);
+		$oauth_access_token_secret= esc_html($instance['oauth_access_token_secret']);
+		$consumer_key = esc_html($instance['consumer_key']);
+		$consumer_secret = esc_html($instance['consumer_secret']);
+
+
+		$wpplugin_profile = wpplugin_test_get_profile( $wpplugin_username, $oauth_access_token, $oauth_access_token_secret, $consumer_key, $consumer_secret, $wpplugin_tweets_count);
+
+		$options['wpplugin_username'] = $wpplugin_username;
+		$options['wpplugin_tweets_count'] = $wpplugin_tweets_count;
+		$options['oauth_access_token'] = $oauth_access_token;
+		$options['oauth_access_token_secret'] = $oauth_access_token_secret;
+		$options['consumer_key'] = $consumer_key;
+		$options['consumer_secret'] = $consumer_secret;
+		$options['wpplugin_profile']  = $wpplugin_profile;
+		$options['last_updated']	  = time();
+
+		update_option('wpplugin_tweets', $options);
+
+		$options = get_option('wpplugin_tweets');
+		$wpplugin_profile = $options['wpplugin_profile'];
+
+		require('inc/front-end.php');
+	}
+
+	function update( $new_instance, $old_instance ) {
+		// Save widget options
+		$instance = $old_instance;
+		$instance['title'] = strip_tags($new_instance['title']);
+		$instance['num_tweets'] = strip_tags($new_instance['num_tweets']);
+
+		$instance['wpplugin_username'] = strip_tags($new_instance['wpplugin_username']);
+		$instance['oauth_access_token'] = strip_tags($new_instance['oauth_access_token']);
+		$instance['oauth_access_token_secret'] = strip_tags($new_instance['oauth_access_token_secret']);
+		$instance['consumer_key'] = strip_tags($new_instance['consumer_key']);
+		$instance['consumer_secret'] = strip_tags($new_instance['consumer_secret']);
+
+		return $instance;
+
+	}
+
+	function form( $instance ) {
+		// Output admin widget options form
+
+		$title = esc_attr($instance['title']);
+		$num_tweets = esc_attr($instance['num_tweets']);
+
+		//$options = get_option('wpplugin_tweets');
+		//$wpplugin_profile = $options['wpplugin_profile'];
+
+		$wpplugin_username = esc_html($instance['wpplugin_username']);
+		$oauth_access_token = esc_attr($instance['oauth_access_token']);
+		$oauth_access_token_secret = esc_attr($instance['oauth_access_token_secret']);
+		$consumer_key = esc_attr($instance['consumer_key']);
+		$consumer_secret = esc_attr($instance['consumer_secret']);
+
+		$options = get_option('wpplugin_tweets');
+		$wpplugin_profile = $options['wpplugin_profile'];
+
+		require('inc/widget-fields.php');
+	}
+}
+
+function wpplugin_twitter_register_widgets() {
+	register_widget( 'Wpplugin_Twitter_Widget' );
+}
+
+add_action( 'widgets_init', 'wpplugin_twitter_register_widgets' );
+
+
+// wpplugin_test_get_profile function
 function wpplugin_test_get_profile( $wpplugin_username, $oauth_access_token, $oauth_access_token_secret, $consumer_key, $consumer_secret, $wpplugin_tweets_count ){
 
 	require_once('TwitterAPIExchange.php');
