@@ -11,7 +11,7 @@
         
         
         echo '<li><a href="'.$current_url.'">'.$current_title.'</a></li>';
-        $pages = get_pages(array('child_of'=>$post->ID, 'parent'=>$post->ID));
+        $pages = get_pages(array('child_of'=>$post->ID, 'parent'=>$post->ID, 'sort_column'=>'menu_order'));
         foreach($pages as $page){
           $list = $page->post_title;
           $url = get_permalink($page->ID);
@@ -34,7 +34,7 @@
         
         
         echo '<li><a href="'.$parent_url.'">'.$parent_title.'</a></li>';
-        $pages = get_pages(array('child_of'=>$post->post_parent, 'parent'=>$post->post_parent));
+        $pages = get_pages(array('child_of'=>$post->post_parent, 'parent'=>$post->post_parent, 'sort_column'=>'menu_order'));
         foreach($pages as $page){
           $list = $page->post_title;
           $url = get_permalink($page->ID);
@@ -47,7 +47,7 @@
           
           // If the menu has child and this menu is the current page
           // List child menus below the menu
-          $child_pages = get_pages(array('child_of'=>$page->ID));
+          $child_pages = get_pages(array('child_of'=>$page->ID, 'sort_column'=>'menu_order'));
           if(count($child_pages) != 0 && $post->ID == $page->ID){
             
             echo "<ul>";
